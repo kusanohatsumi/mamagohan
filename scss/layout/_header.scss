@@ -1,0 +1,33 @@
+@use "../config/variables" as var;
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  input {
+    width: 270px;
+    height: 37px;
+    padding: 0 12px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .notice {
+    width: 35px;
+    height: 35px;
+    border-radius: 25px;
+    border: solid 1px var.$accent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a {
+      width: 27px;
+      height: 27px;
+    }
+  }
+}

@@ -1,8 +1,12 @@
+@use "../config/variables" as var;
+
 html {
   font-size: 62.5%;
 }
 body {
   font-size: 1.6rem;
+  color: var.$text;
+  background-color: var.$base;
 }
 
 a {
@@ -10,4 +14,8 @@ a {
 }
 ul {
   list-style: none;
+}
+input {
+  border: none;
+  outline: none;
 }
