@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- ナビゲーションバー -->
+    <nav class="nav">
+      <figure class="nav__item">
+        <a href="index.html"><img alt="ホーム" src="img/post.svg" /></a>
+        <figcaption>ホーム</figcaption>
+      </figure>
+      <figure class="nav__item">
+        <a href="#"><img alt="投稿" src="img/post.svg" /></a>
+        <figcaption>投稿</figcaption>
+      </figure>
+      <figure class="nav__item">
+        <a href="#"><img alt="マイページ" src="img/mypage.svg" /></a>
+        <figcaption>マイページ</figcaption>
+      </figure>
+    </nav>
+    <!-- ナビゲーションバー終わり -->
+    <main class="p-wrap">
+      <h1 class="p-title">新規投稿</h1>
+      <!-- 以下、フォーム -->
+      <div class="p-container">
+        <div>
+          <figure class="p-thumbnail">
+            <img alt="サムネイル" src="https://picsum.photos/800/150" />
+          </figure>
+          <div class="p-filter">
+            <div class="p-filter__item normal">
+              <div></div>
+              <p>normal</p>
+            </div>
+            <div class="p-filter__item">
+              <div></div>
+              <p>Clarendon</p>
+            </div>
+            <div class="p-filter__item">
+              <div></div>
+              <p>Gingham</p>
+            </div>
+            <div class="p-filter__item">
+              <div></div>
+              <p>Moon</p>
+            </div>
+            <div class="p-filter__item">
+              <div></div>
+              <p>Lark</p>
+            </div>
+            <div class="p-filter__item">
+              <div></div>
+              <p>Reyes</p>
+            </div>
+          </div>
+        </div>
+        <!-- フィルター終わり -->
+        <div class="p-contents">
+          <div class="p-contents__item">
+            <label>料理名</label>
+            <input
+              id="recipeName"
+              name="recipeName"
+              type="text"
+              placeholder="オムライス"
+            />
+          </div>
+          <div class="p-contents__item">
+            <label>コメント</label>
+            <textarea id="comment" name="comment">美味しくできました</textarea>
+          </div>
+          <div class="p-contents__item">
+            <label>調理時間</label>
+            <input
+              id="time"
+              class="time"
+              type="time"
+              name="time"
+              value="07:00"
+            />
+          </div>
+          <div class="p-contents__item">
+            <label>おすすめ</label>
+            <!-- タグ -->
+            <div class="p-tag">
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>子供向け</label>
+              </div>
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>旦那向け</label>
+              </div>
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>ファミリー向け</label>
+              </div>
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>お弁当</label>
+              </div>
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>季節</label>
+              </div>
+              <div class="p-tag__item">
+                <input type="checkbox" />
+                <label>時短</label>
+              </div>
+            </div>
+            <!-- タグ終わり -->
+          </div>
+        </div>
+        <div class="p-post"><a href="#">投稿</a></div>
+      </div>
+      <!-- フォーム終わり -->
+    </main>
+  </body>
+</html>
