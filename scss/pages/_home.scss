@@ -1,0 +1,122 @@
+@use "../config/variables" as var;
+.h-tab {
+  display: flex;
+  &__item {
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background-color: var.$sub2;
+  }
+  &__item--follow {
+    background-color: #fff;
+  }
+}
+.h-container {
+  width: 100%;
+  height: 77vh;
+  padding: 8px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #fff;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.h-contents {
+  width: 350px;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+}
+
+.h-title {
+  width: 320px;
+  height: 24px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+  font-size: var.$base_font;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  &__icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 12px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.h-action {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  figure {
+    img {
+      height: 20px;
+    }
+  }
+  figure:first-child {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+// 調理時間とタグ
+.h-tt {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin: 8px 0 12px;
+  &__time {
+    display: flex;
+    align-items: center;
+    img {
+      width: 15px;
+    }
+  }
+  &__tag {
+    p {
+      display: inline-block;
+      height: 25px;
+      line-height: 25px;
+      padding: 0 8px;
+      color: #fff;
+      background-color: var.$sub;
+      border-radius: 3px;
+    }
+  }
+}
+.h-detail {
+  &__tag {
+    color: var.$accent;
+  }
+}
+
+.h-showComment {
+  margin: 8px 0;
+  color: #ccc;
+}
+.h-addComment {
+  display: flex;
+  align-items: center;
+  &__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 25%;
+  }
+  &__text {
+    width: 100%;
+    padding: 4px 8px;
+  }
+}
