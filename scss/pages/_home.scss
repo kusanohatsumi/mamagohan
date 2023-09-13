@@ -1,6 +1,8 @@
 @use "../config/variables" as var;
 .h-tab {
   display: flex;
+  width: 390px;
+  margin: 0 auto;
   &__item {
     width: 80px;
     height: 30px;
@@ -14,13 +16,14 @@
   }
 }
 .h-container {
-  width: 100%;
+  width: 390px;
   height: 77vh;
   padding: 8px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin: 0 auto;
   background-color: #fff;
   &::-webkit-scrollbar {
     display: none;

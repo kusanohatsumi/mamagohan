@@ -76,6 +76,7 @@ body {
   color: #333;
   font-family: "Kosugi Maru";
   background-color: #fbf1e5;
+  position: relative;
 }
 
 a {
@@ -115,7 +116,7 @@ main {
   src: url(/fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf) format("truetype'");
 }
 header {
-  width: 100%;
+  width: 390px;
   height: 70px;
   display: flex;
   justify-content: center;
@@ -123,6 +124,8 @@ header {
   gap: 8px;
   position: fixed;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #fbf1e5;
 }
 header .logo {
@@ -152,7 +155,7 @@ header .notice a {
 }
 
 .nav {
-  width: 100%;
+  width: 390px;
   height: 60px;
   background-color: #eb922a;
   display: flex;
@@ -161,6 +164,8 @@ header .notice a {
   gap: 24px;
   position: fixed;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .nav__item {
   width: 55px;
@@ -179,6 +184,8 @@ header .notice a {
 
 .h-tab {
   display: flex;
+  width: 390px;
+  margin: 0 auto;
 }
 .h-tab__item {
   width: 80px;
@@ -193,13 +200,14 @@ header .notice a {
 }
 
 .h-container {
-  width: 100%;
+  width: 390px;
   height: 77vh;
   padding: 8px;
   overflow: scroll;
   display: flex;
   flex-direction: column;
   gap: 32px;
+  margin: 0 auto;
   background-color: #fff;
 }
 .h-container::-webkit-scrollbar {

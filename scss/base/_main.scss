@@ -9,6 +9,7 @@ body {
   color: var.$text;
   @include mix.baseFont;
   background-color: var.$base;
+  position: relative;
 }
 
 a {
