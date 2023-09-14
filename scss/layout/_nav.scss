@@ -1,6 +1,7 @@
 @use "../config/variables" as var;
 .nav {
-  width: 390px;
+  min-width: 390px;
+  width: 420px;
   height: 60px;
   background-color: var.$accent;
   display: flex;
@@ -11,6 +12,7 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 88;
 
   &__item {
     width: 55px;
